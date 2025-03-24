@@ -1,0 +1,126 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brunel Sports Centre</title>
+  <link rel="stylesheet" href="static/css/styles.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .dark-blue-text {
+      color: #003366; /* Dark Blue */
+    }
+    #success {
+      display: none;
+      text-align: center;
+      padding: 15px;
+      margin: 20px;
+      border: 2px solid #4CAF50;
+      background-color: #dff0d8;
+      color: #3c763d;
+    }
+  
+    /* Show the message when the payment is #success */
+    #success:target {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="w3-container w3-white w3-center" style="padding-top: 25px; padding-bottom: 25px; padding-left: 50px; padding-right: 50px;">
+    <div class="w3-left w3-padding-left">
+      <a href="https://www.brunel.ac.uk">
+        <img src="static/images/brunellogo.png" width="150" height="150">
+      </a>
+    </div>
+    <nav class="w3-bar w3-right">
+      <p>
+        <a href="home.html" class="w3-right">
+          <h5 class="dark-blue-text" style="padding-bottom: 30px;">
+            <strong>Welcome to Brunel Sports Center!</strong>
+          </h5>
+        </a>
+      </p>
+      <a href="sports.html" class="w3-bar-item w3-button w3-border-right w3-border-left">
+        <h5 class="dark-blue-text">Sports</h5>
+      </a>
+      <a href="store.html" class="w3-bar-item w3-button w3-border-right">
+        <h5 class="dark-blue-text">Shop</h5>
+      </a>
+      <a href="membership.html" class="w3-bar-item w3-button w3-border-right">
+        <h5 class="dark-blue-text">Membership</h5>
+      </a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Successful Payment Notification -->
+    <div id="success">
+      <h2>Payment Successful!</h2>
+      <p>Thank you for your payment.</p>
+    </div>
+    
+    <!-- Sliding Image Section -->
+    <section class="slider-wrapper">
+      <div class="slider">
+        <div class="slides">
+          <div id="slides__1" class="slide">
+            <img src="static/images/Ntavint/1.jpg">
+            <a class="slide__prev" href="#slides__4" title="Prev"></a>
+            <a class="slide__next" href="#slides__2" title="Next"></a>
+          </div>
+          <div id="slides__2" class="slide">
+            <img src="static/images/Ntavint/2.webp"Gym Facilities">
+            <a class="slide__prev" href="#slides__1" title="Prev"></a>
+            <a class="slide__next" href="#slides__3" title="Next"></a>
+          </div>
+          <div id="slides__3" class="slide">
+            <img src="static/images/Ntavint/3.jpg"Basketball Court">
+            <a class="slide__prev" href="#slides__2" title="Prev"></a>
+            <a class="slide__next" href="#slides__4" title="Next"></a>
+          </div>
+          <div id="slides__4" class="slide">
+            <img src="static/images/Ntavint/4.jpg" alt="Swimming Pool">
+            <a class="slide__prev" href="#slides__3" title="Prev"></a>
+            <a class="slide__next" href="#slides__1" title="Next"></a>
+          </div>
+        </div>
+        <div class="slider__nav">
+          <a class="slider__navlink" href="#slides__1"></a>
+          <a class="slider__navlink" href="#slides__2"></a>
+          <a class="slider__navlink" href="#slides__3"></a>
+          <a class="slider__navlink" href="#slides__4"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+      <div class="container">
+        <h2>Welcome to Brunel University Sports Centre</h2>
+        <p>Brunel University Sports Centre was established to provide students, staff, and the community with top-notch sports and fitness facilities. It offers state-of-the-art gym equipment, an Olympic-sized swimming pool, and a variety of indoor and outdoor sports courts.</p>
+        <p>Since its inception, the sports centre has been a hub for promoting physical well-being, encouraging active lifestyles, and hosting university-level sports events. Our mission is to create an inclusive environment where individuals of all fitness levels can thrive.</p>
+        <h3>Message from the Sports Director</h3>
+        <p>"At Brunel University Sports Centre, we are dedicated to fostering a culture of health, fitness, and teamwork. Our facilities cater to athletes and casual fitness enthusiasts alike, ensuring everyone finds their place in our sports community." – Sports Director</p>
+        <video controls>
+          <source src="static/videos/video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>Contact Us: Brunel University London | Phone: 01895 265305 | Email: Sports.Centre@brunel.ac.uk</p>
+      <p>&copy; 2025 Brunel University London. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

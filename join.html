@@ -1,0 +1,100 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Brunel Sports Centre</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="static/css/styles.css">
+  <style>
+    .dark-blue-text {
+      color: #003366; /* Dark Blue */
+    }
+  </style>
+</head>
+<body class="w3-light-grey">
+  <!-- Header section -->
+  <header class="w3-container w3-white w3-center" style="padding-top: 25px; padding-bottom: 25px; padding-left: 50px; padding-right: 50px;">
+    <div class="w3-left w3-padding-left">
+      <a href="https://www.brunel.ac.uk">
+        <img src="static/images/brunellogo.png" width="150" height="150">
+      </a>
+    </div>
+    <nav class="w3-bar w3-right">
+      <p>
+        <a href="home.html" class="w3-right">
+          <h5 class="dark-blue-text" style="padding-bottom: 30px;">
+            <strong>Welcome to Brunel Sports Center!</strong>
+          </h5>
+        </a>
+      </p>
+      <a href="sports.html" class="w3-bar-item w3-button w3-border-right w3-border-left">
+        <h5 class="dark-blue-text">Sports</h5>
+      </a>
+      <a href="store.html" class="w3-bar-item w3-button w3-border-right">
+        <h5 class="dark-blue-text">Shop</h5>
+      </a>
+      <a href="membership.html" class="w3-bar-item w3-button w3-border-right">
+        <h5 class="dark-blue-text">Membership</h5>
+      </a>
+    </nav>
+  </header>
+
+  <!-- Main content section -->
+  <div class="w3-container">
+    <h2 class="w3-text-blue">Join Our Membership</h2>
+    <form action="payment.html#fee-50" method="post" class="w3-container w3-card-4 w3-padding">
+      <!-- Form fields -->
+      <p>
+        <label>Full Name</label>
+        <input class="w3-input" type="text" name="name" required>
+      </p>
+      <p>
+        <label>Profession (Student/Staff)</label>
+        <input class="w3-input" type="text" name="profession" required>
+      </p>
+      <p>
+        <label>ID Number</label>
+        <input class="w3-input" type="text" name="id_number" required>
+      </p>
+      <p>
+        <label>Date of Birth</label>
+        <input class="w3-input" type="date" name="dob" required>
+      </p>
+      <p>
+        <label>Gender</label>
+        <select class="w3-select" name="gender" required>
+          <option value="">Select</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </p>
+      <p>
+        <label>Address</label>
+        <input class="w3-input" type="text" name="address" required>
+      </p>
+      <p>
+        <label>Phone Number</label>
+        <input class="w3-input" type="tel" name="phone" required>
+      </p>
+      <p>
+        <label>Email Address</label>
+        <input class="w3-input" type="email" name="email" required>
+      </p>
+      <p>
+        <input class="w3-check" type="checkbox" name="consent" required>
+        <label>I agree to receive advertising mails.</label>
+      </p>
+      <p>
+        <button class="w3-button w3-blue" type="submit">Submit</button>
+      </p>
+    </form>
+  </div>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>Contact Us: Brunel University London | Phone: 01895 265305 | Email: Sports.Centre@brunel.ac.uk</p>
+      <p>&copy; 2025 Brunel University London. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

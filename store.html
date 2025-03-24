@@ -1,0 +1,174 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brunel Sports Centre</title>
+
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  
+
+    <style>
+        /* Dark Blue Text */
+        .dark-blue-text {
+            color: #003366;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .items {
+            background-color: #f4f4f4;
+            padding: 10px;
+            margin: 40px;
+            border-radius: 8px;
+            text-align: center;
+            width: 20%;
+            height: auto;
+            text-size-adjust: 20px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .items-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .items:hover {
+            box-shadow: 0 0 20px 10px rgba(104, 104, 104, 0.7);
+        }
+
+        .items img {
+            width: 60%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            float: center;
+        }
+
+        .buybtn, .rentbtn {
+            background-color: #00bbff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 16px;
+            margin-top: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            padding-bottom: 10px;
+        }
+
+        .buybtn:hover, .rentbtn:hover {
+            background-color: #005f87;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="w3-container w3-white w3-center" style="padding: 25px 50px;">
+        <div class="w3-left w3-padding-left">
+            <a href="https://www.brunel.ac.uk">
+                <img src="static/images/brunellogo.png" width="150" height="150" alt="Brunel University Logo">
+            </a>
+        </div>
+
+        <!-- Original Navbar -->
+        <nav class="w3-bar w3-right">
+            <p>
+                <a href="home.html" class="w3-right">
+                    <h5 class="dark-blue-text" style="padding-bottom: 30px;">
+                        <strong>Welcome to Brunel Sports Center!</strong>
+                    </h5>
+                </a>
+            </p>
+            <a href="sports.html" class="w3-bar-item w3-button w3-border-right w3-border-left">
+                <h5 class="dark-blue-text">Sports</h5>
+            </a>
+            <a href="store.html" class="w3-bar-item w3-button w3-border-right">
+                <h5 class="dark-blue-text">Shop</h5>
+            </a>
+            <a href="membership.html" class="w3-bar-item w3-button w3-border-right">
+                <h5 class="dark-blue-text">Membership</h5>
+            </a>
+        </nav>
+    </header>
+
+    <!-- Items Section -->
+    <div class="items-container" id="itemcontainer">   
+        <div class="items">
+            <h2>Brunel Jacket</h2>
+            <img src="https://brunelmerchshop.co.uk/cdn/shop/files/IMG_0378-Edit.jpg?v=1737561884&width=2890" alt="Brunel Jacket">
+            <p>Step up your Brunel spirit with the Brunel University Baseball Jacket. Combining classic athletic style with modern comfort.</p>
+            <p><em>(70% Cotton, 30% Polyester.)</em></p>
+            <p>£39.99</p>
+            <a href="payment.html#price-39.99" class="buybtn">Buy Now!</a>
+            <a href="payment.html#rent-39.99" class="rentbtn">Rent Now!</a>
+        </div>
+
+        <div class="items">
+            <h2>Brunel Plushies</h2>
+            <img src="https://brunelmerchshop.co.uk/cdn/shop/files/GradBearandIzzy1.jpg?v=1737563071&width=2890" alt="Brunel Plushies">
+            <p>Cuddle up with the Brunel University Plushie, the perfect companion for showing off your school spirit.</p>
+            <p><em>(80% Soft Polyester, 20% Cotton.)</em></p>
+            <p>£15.99</p>
+            <a href="payment.html#price-15.99" class="buybtn">Buy Now!</a>
+            <a href="payment.html#rent-15.99" class="rentbtn">Rent Now!</a>
+        </div>
+
+        <div class="items">
+            <h2>Brunel Scarf</h2>
+            <img src="https://brunelmerchshop.co.uk/cdn/shop/files/StudentUnionMerch70.jpg?v=1737562049" alt="Brunel Scarf">
+            <p>Wrap yourself in warmth and pride with the Brunel University Scarf.</p>
+            <p><em>(60% Acrylic, 40% Wool.)</em></p>
+            <p>£12.99</p>
+            <a href="payment.html#price-12.99" class="buybtn">Buy Now!</a>
+            <a href="payment.html#rent-12.99" class="rentbtn">Rent Now!</a>
+        </div>
+    </div> 
+
+    <div class="items-container">   
+        <div class="items">
+            <h2>Brunel Shirt</h2>
+            <img src="https://brunelmerchshop.co.uk/cdn/shop/files/Image_3_338fafb7-45b9-4346-8fc3-8b3c2e5b571c.jpg?v=1737727965" alt="Brunel Shirt">
+            <p>(70% Breathable Cotton, 30% Recycled Polyester.)</p>
+            <p>£19.99</p>
+            <a href="payment.html#price-19.99" class="buybtn">Buy Now!</a>
+            <a href="payment.html#rent-19.99" class="rentbtn">Rent Now!</a>
+        </div>
+
+        <div class="items">
+            <h2>Brunel Sweatshirt</h2>
+            <img src="https://brunelmerchshop.co.uk/cdn/shop/files/Image_8_da958c71-2502-47bd-9b0b-d4b908eff7a0.jpg?v=1737727965" alt="Brunel Sweatshirt">
+            <p>(65% Organic Cotton, 30% Fleece Lined Polyester.)</p>
+            <p>£29.99</p>
+            <a href="payment.html#price-29.99" class="buybtn">Buy Now!</a>
+            <a href="payment.html#rent-29.99" class="rentbtn">Rent Now!</a>
+        </div>
+
+        <div class="items">
+            <h2>Brunel Mascot Bundle</h2>
+            <img src="https://brunelmerchshop.co.uk/cdn/shop/files/Bundle_Save_Template_izzy_varsity.png?v=1737729160" alt="Brunel Mascot Bundle">
+            <p>Double the fun with the Brunel University Mascot Plushie Bundle!</p>
+            <p>£25.99</p>
+            <a href="payment.html#price-25.99" class="buybtn">Buy Now!</a>
+            <a href="payment.html#rent-25.99" class="rentbtn">Rent Now!</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Contact Us: Brunel University London | Phone: 01895 265305 | Email: Sports.Centre@brunel.ac.uk</p>
+            <p>&copy; 2025 Brunel University London. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

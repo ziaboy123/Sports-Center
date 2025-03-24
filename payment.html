@@ -1,0 +1,117 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Brunel Sports Centre</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="static/css/styles.css">
+  <style>
+    .dark-blue-text {
+      color: #003366; /* Dark Blue */
+    }
+
+    /* Hide all price blocks by default */
+    .price, .rent, .membership-fee {
+      display: none;
+    }
+
+    /* Show the targeted price block when neccessary */
+    .price:target, .rent:target, .membership-fee:target {
+      display: block;
+    }
+  </style>
+</head>
+<body class="w3-light-grey">
+
+  <header class="w3-container w3-white w3-center" style="padding-top: 25px; padding-bottom: 25px; padding-left: 50px; padding-right: 50px;">
+    <div class="w3-left w3-padding-left">
+      <a href="https://www.brunel.ac.uk">
+        <img src="static/images/brunellogo.png" width="150" height="150">
+      </a>
+    </div>
+    <nav class="w3-bar w3-right">
+      <p><a href="home.html" class="w3-right"><h5 class="dark-blue-text" style="padding-bottom: 30px;"><strong>Welcome to Brunel Sports Center!</strong></h5></a></p>
+      <a href="sports.html" class="w3-bar-item w3-button w3-border-right w3-border-left"><h5 class="dark-blue-text">Sports</h5></a>
+      <a href="store.html" class="w3-bar-item w3-button w3-border-right"><h5 class="dark-blue-text">Shop</h5></a>
+      <a href="membership.html" class="w3-bar-item w3-button w3-border-right"><h5 class="dark-blue-text">Membership</h5></a>
+    </nav>
+  </header>
+
+  <div class="w3-container">
+    <h2 class="w3-text-blue">Payment</h2>
+
+    <!-- Membership Price display blocks -->
+    <div id="fee-50" class="membership-fee w3-panel w3-pale-green w3-border">
+      <p>Membership Fee: <strong>£50</strong> per semester</p>
+    </div>
+  
+    <!-- Buy Price display blocks -->
+    <div id="price-39.99" class="price w3-panel w3-pale-green w3-border">
+      <p>Selected Buy Price: £39.99 (Brunel Jacket)</p>
+    </div>
+    <div id="price-15.99" class="price w3-panel w3-pale-blue w3-border">
+      <p>Selected Buy Price: £15.99 (Brunel Plushies)</p>
+    </div>
+    <div id="price-12.99" class="price w3-panel w3-pale-red w3-border">
+      <p>Selected Buy Price: £12.99 (Brunel Scarf)</p>
+    </div>
+    <div id="price-19.99" class="price w3-panel w3-pale-yellow w3-border">
+      <p>Selected Buy Price: £19.99 (Brunel Shirt)</p>
+    </div>
+    <div id="price-29.99" class="price w3-panel w3-pale-orange w3-border">
+      <p>Selected Buy Price: £29.99 (Brunel Sweatshirt)</p>
+    </div>
+    <div id="price-25.99" class="price w3-panel w3-pale-purple w3-border">
+      <p>Selected Buy Price: £25.99 (Brunel Mascot Bundle)</p>
+    </div>
+
+    <!-- Rent Price display blocks -->
+    <div id="rent-39.99" class="rent w3-panel w3-pale-green w3-border">
+      <p>Selected Rent Price: £39.99 (Brunel Jacket)</p>
+    </div>
+    <div id="rent-15.99" class="rent w3-panel w3-pale-blue w3-border">
+      <p>Selected Rent Price: £15.99 (Brunel Plushies)</p>
+    </div>
+    <div id="rent-12.99" class="rent w3-panel w3-pale-red w3-border">
+      <p>Selected Rent Price: £12.99 (Brunel Scarf)</p>
+    </div>
+    <div id="rent-19.99" class="rent w3-panel w3-pale-yellow w3-border">
+      <p>Selected Rent Price: £19.99 (Brunel Shirt)</p>
+    </div>
+    <div id="rent-29.99" class="rent w3-panel w3-pale-orange w3-border">
+      <p>Selected Rent Price: £29.99 (Brunel Sweatshirt)</p>
+    </div>
+    <div id="rent-25.99" class="rent w3-panel w3-pale-purple w3-border">
+      <p>Selected Rent Price: £25.99 (Brunel Mascot Bundle)</p>
+    </div>
+
+    <form action="home.html#success" method="post" class="w3-container w3-card-4 w3-padding">
+      <p>
+        <label>Name on Card</label>
+        <input class="w3-input" type="text" name="name" required>
+      </p>
+      <p>
+        <label>Card Number</label>
+        <input class="w3-input" type="text" name="card_number" required>
+      </p>
+      <p>
+        <label>Expiration Date (MM/YY)</label>
+        <input class="w3-input" type="text" name="expiry" required>
+      </p>
+      <p>
+        <label>CVC</label>
+        <input class="w3-input" type="text" name="cvc" required>
+      </p>
+      <p>
+        <button class="w3-button w3-blue" type="submit">Submit Payment</button>
+      </p>
+    </form>
+  </div>
+  <!-- Footer -->
+  <footer class="w3-bottom w3-block footer">
+    <div class="container">
+      <p>Contact Us: Brunel University London | Phone: 01895 265305 | Email: Sports.Centre@brunel.ac.uk</p>
+      <p>&copy; 2025 Brunel University London. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

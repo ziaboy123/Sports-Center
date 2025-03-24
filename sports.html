@@ -1,0 +1,210 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brunel Sports Centre</title>
+
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <style>
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* General Reset */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        /* Dark Blue Text */
+        .dark-blue-text {
+            color: #003366;
+        }
+
+        /* Section Styling */
+        .game-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+            padding: 20px;
+            margin: 20px auto;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .game-section:hover {
+            box-shadow: 0 0 20px 10px rgba(129, 129, 129, 0.7);
+        }
+
+        .game-section img {
+            width: 40%;
+            height: 250px;
+            border-radius: 8px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .game-section img:hover {
+            box-shadow: 0 0 20px 10px rgba(0, 72, 255, 0.7);
+        }
+
+        .game-section p {
+            width: 50%;
+            padding: 15px;
+            font-size: 16px;
+            color: #333;
+        }
+
+        /* Button Styling */
+        .join-btn {
+            background-color: #00bbff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 16px;
+            margin-top: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .join-btn:hover {
+            background-color: #005f87;
+        }
+
+        /* Awarded Students Section */
+        .awarded-student-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .awarded-student {
+            background-color: #f4f4f4;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 8px;
+            text-align: center;
+            width: 22%;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .awarded-student:hover {
+            box-shadow: 0 0 20px 10px rgba(104, 104, 104, 0.7);
+        }
+
+        .awarded-student img {
+            width: 65%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="w3-container w3-white w3-center" style="padding: 25px 50px;">
+        <div class="w3-left w3-padding-left">
+            <a href="https://www.brunel.ac.uk">
+                <img src="static/images/brunellogo.png" width="150" height="150" alt="Brunel University Logo">
+            </a>
+        </div>
+
+        <nav class="w3-bar w3-right">
+            <p>
+                <a href="home.html" class="w3-right">
+                    <h5 class="dark-blue-text" style="padding-bottom: 30px;">
+                        <strong>Welcome to Brunel Sports Center!</strong>
+                    </h5>
+                </a>
+            </p>
+            <a href="sports.html" class="w3-bar-item w3-button w3-border-right w3-border-left">
+                <h5 class="dark-blue-text">Sports</h5>
+            </a>
+            <a href="store.html" class="w3-bar-item w3-button w3-border-right">
+                <h5 class="dark-blue-text">Shop</h5>
+            </a>
+            <a href="membership.html" class="w3-bar-item w3-button w3-border-right">
+                <h5 class="dark-blue-text">Membership</h5>
+            </a>
+        </nav>
+    </header>
+
+    <!-- Sports Sections -->
+    <div class="game-section" id="thecenter" title="Sports Center">
+        <h2>Sports Center</h2>
+        <img src="https://www.velocity-sports.co.uk/wp-content/uploads/2022/01/12-2.jpg" alt="Sports Center Image">
+        <p>Our state-of-the-art sports facilities rank among the best university facilities in the UK and are used by some of the world's elite athletes. Our facilities are open to students, staff, and members of the community. Activity programmes run throughout the year but with seasonal variations. We welcome anyone with disabilities and aim to provide a welcoming and friendly environment that is supportive to all our users with lift and ramp access. We are committed to providing opportunities for all to take part in sport and active recreation. Please contact us for further inquiries.</p>
+        <a href="join.html" class="join-btn">Join Now!</a>
+    </div>
+
+    <div class="game-section" id="badminton">
+        <h2>Badminton</h2>
+        <img src="static/images/Ibrahim/badminton.jpeg" alt="Badminton Image">
+        <p>Badminton is a fast-paced game played with a shuttlecock and rackets. It is a popular sport among students. Students can join the game on Mondays and Wednesdays from 5-7 PM at the Sports Centre.</p>
+        <a href="join.html" class="join-btn">Join Now!</a>
+    </div>
+
+    <div class="game-section" id="basketball">
+        <h2>Basketball</h2>
+        <img src="static/images/Ibrahim/basketball.jpg" alt="Basketball Image" title="Basketball">
+        <p>Basketball is a team sport that requires skill and strategy. The team practices every Tuesday and Thursday from 6-8 PM. Players are selected through trials in the first week of each semester.</p>
+        <a href="join.html" class="join-btn">Join Now!</a>
+    </div>
+
+    <div class="game-section" id="baseball">
+        <h2>Baseball</h2>
+        <img src="static/images/Ibrahim/baseballg.jpg" alt="Baseball Image">
+        <p>Baseball is a thrilling game played on the field. Students interested in baseball can practice every Friday from 3-6 PM. Team selection is done based on performance during training.</p>
+        <a href="join.html" class="join-btn">Join Now!</a>
+    </div>
+
+    <div class="game-section" id="netball">
+        <h2>Netball</h2>
+        <img src="static/images/Ibrahim/netball.jpeg" alt="Netball Image">
+        <p>Netball is an exciting game played on the court. Students interested in netball can practice every Tuesday and Thursday from 3-6 PM. Team selection is done based on performance during training.</p>
+        <a href="join.html" class="join-btn">Join Now!</a>
+    </div>
+
+    <!-- Awarded Students Section -->
+    <div class="awarded-student-container">
+        <div class="awarded-student">
+            <h2>Alex</h2>
+            <img src="static/images/Ibrahim/football.jpg" alt="Football Student Image">
+            <p>"Brunel Sports Centre has been a game-changer for me. The facilities are top-notch, and having access to professional coaching pushed me to improve my skills on the court."</p>
+        </div>
+
+        <div class="awarded-student">
+            <h2>Maya</h2>
+            <img src="static/images/Ibrahim/basketball.jpg" alt="Basketball Student Image">
+            <p>"When I first joined Brunel, I was passionate about rugby but lacked consistency. The Sports Centre provided not just great facilities but also a community where I could grow stronger, both mentally and physically."</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Contact Us: Brunel University London | Phone: 01895 265305 | Email: Sports.Centre@brunel.ac.uk</p>
+            <p>&copy; 2025 Brunel University London. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

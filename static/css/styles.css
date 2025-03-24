@@ -1,0 +1,209 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Container for centered content */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styling */
+header {
+  background-color: #003B5C; /* Brunel University Blue */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Slider Styling */
+.slider-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  background: linear-gradient(149deg, #f4f4f4 100%);
+}
+
+.slider {
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px #f4f4f4;
+}
+
+.slides {
+  display: flex;
+  width: 400%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  flex: 1;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+/* Navigation Arrows */
+.slide__prev, .slide__next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 24px;
+  transition: background 0.3s;
+}
+
+.slide__prev {
+  left: 15px;
+}
+
+.slide__next {
+  right: 15px;
+}
+
+.slide__prev:hover, .slide__next:hover {
+  background: #f4f4f4;
+}
+
+/* Slider Navigation Dots */
+.slider__nav {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.slider__navlink {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.slider__navlink:hover {
+  opacity: 1;
+}
+
+/* About Section */
+.about {
+  background-color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #003B5C;
+}
+
+.about p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about video {
+  max-width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #003B5C; /* Brunel University Blue */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+
+  .slider {
+    width: 95%;
+  }
+
+  .slide img {
+    border-radius: 10px;
+  }
+
+  .slide__prev, .slide__next {
+    font-size: 18px;
+    padding: 8px;
+  }
+}
